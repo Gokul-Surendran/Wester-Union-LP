@@ -1,0 +1,272 @@
+.wul-header {
+    background-color: var(--clr-black);
+    z-index: 1;
+    position: relative;
+  
+    .navbar {
+      padding: $spacer-6 $spacer-0;
+    }
+  
+    &__logo {
+      max-width: 200px;
+      padding: 0;
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+    .nav-item {
+      margin: 0 $spacer-2;
+      position: relative;
+  
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--clr-yellow);
+      }
+  
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  
+    .nav-link {
+      font-size: 20px;
+    }
+  
+    .container-fluid {
+      padding: 0;
+    }
+  
+    .navbar-light .navbar-brand {
+      color: var(--clr-white);
+    }
+  
+    .navbar-light .navbar-toggler-icon {
+      background-image: url("../images/hamburg-white.svg");
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .navbar-toggler {
+      padding: 0;
+    }
+  
+    .navbar-light .navbar-nav .nav-link {
+      color: var(--clr-white);
+    }
+  
+    // for login page
+    &--yellow {
+      background-color: var(--clr-yellow);
+  
+      .navbar-light .navbar-nav {
+        .nav-link {
+          color: var(--clr-black);
+        }
+      }
+  
+      .navbar-light .navbar-toggler-icon {
+        background-image: url("../images/hamburg-black.svg");
+      }
+  
+      //
+      .wul-header__lang {
+        span {
+          color: var(--clr-black);
+        }
+      }
+  
+      .wul-header__langicon {
+        svg {
+          path {
+            fill: var(--clr-black);
+          }
+        }
+      }
+    }
+  
+    &__rightnav {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__lang {
+      margin-left: $spacer-2;
+      display: flex;
+      align-items: center;
+  
+      span {
+        font-size: 20px;
+        color: var(--clr-white);
+      }
+    }
+  
+    &__langicon {
+      width: 25px;
+      height: 25px;
+      margin-right: $spacer-1;
+  
+      svg {
+        width: 100%;
+        height: 100%;
+  
+        path {
+          fill: var(--clr-white);
+        }
+      }
+    }
+  }
+  
+  @include mobile-tablet {
+    .wul-header {
+      .navbar {
+        padding: $spacer-5 $spacer-0;
+      }
+  
+      .navbar-nav {
+        padding: $spacer-3 $spacer-0;
+        margin-bottom: 0 !important;
+      }
+  
+      .nav-item {
+        &::after {
+          content: none;
+        }
+      }
+  
+      .navbar-toggler {
+        outline: none;
+        border: none;
+        box-shadow: none;
+  
+        &:focus {
+          outline: none;
+          border: none;
+          box-shadow: none;
+        }
+      }
+  
+      &__lang {
+        margin-right: $spacer-3;
+  
+        span {
+          font-size: 25px;
+        }
+      }
+  
+      .container-fluid {
+        .wul-header__logo {
+          order: 1;
+        }
+  
+        .wul-header__rightnav,
+        .navbar-toggler {
+          order: 2;
+        }
+  
+        .navbar-collapse {
+          order: 3;
+        }
+  
+      }
+    }
+  }
+  
+  @include mobile {
+    .wul-header {
+      background-color: var(--clr-grey2);
+  
+      .navbar {
+        padding: $spacer-3 $spacer-0;
+      }
+  
+      &__logo {
+        max-width: 65px;
+      }
+  
+      .navbar-light .navbar-toggler-icon {
+        background-image: url("../images/hamburg-black.svg");
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+  
+      .navbar-light .navbar-nav {
+        .nav-link {
+          color: var(--clr-black);
+        }
+      }
+  
+      &--yellow {
+        background-color: var(--clr-black);
+  
+        .navbar-light .navbar-toggler-icon {
+          background-image: url("../images/hamburg-yellow.svg");
+        }
+  
+        .navbar-light .navbar-nav {
+          .nav-link {
+            color: var(--clr-white);
+          }
+        }
+  
+        .wul-header__lang {
+          span {
+            color: var(--clr-yellow);
+          }
+        }
+  
+        .wul-header__langicon {
+          svg {
+            path {
+              fill: var(--clr-yellow);
+            }
+          }
+        }
+      }
+  
+      &__lang {
+        margin-right: $spacer-3;
+  
+        span {
+          font-size: 20px;
+          color: var(--clr-black);
+        }
+      }
+  
+      &__langicon {
+        width: 22px;
+        height: 22px;
+  
+        svg {
+          path {
+            fill: var(--clr-black);
+          }
+        }
+      }
+  
+      .container-fluid {
+        .wul-header__logo {
+          order: 1;
+        }
+  
+        .wul-header__rightnav,
+        .navbar-toggler {
+          order: 2;
+        }
+  
+        .navbar-collapse {
+          order: 3;
+        }
+      }
+    }
+  }
