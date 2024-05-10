@@ -1,0 +1,42 @@
+.wul-btn {
+    position: relative;
+    display: inline-block;
+    color: var(--clr-black);
+    background-color: var(--clr-yellow);
+    user-select: none;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 44px;
+    padding: $spacer-2 $spacer-5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PP Right Grotesk Wide';
+ 
+    &--black {
+       color: var(--clr-yellow);
+       background-color: var(--clr-black);
+       transition: 0.3s;
+       &:hover {
+        background-color: var(--clr-white);
+        color: var(--clr-black);
+        border: 1px solid var(--clr-black);
+        transition: 0.3s;
+       }
+    }
+ 
+    &--arrow {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       // height: 40px;
+       font-weight: $font-semi-bold;
+       padding: $spacer-2 $spacer-4;
+ 
+       svg {
+          width: 15px;
+          height: 15px;
+          margin-left: $spacer-1;
+       }
+    }
+ }

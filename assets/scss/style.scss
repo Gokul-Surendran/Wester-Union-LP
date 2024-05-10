@@ -8,9 +8,12 @@
 @import "./base/dev";
 
 // atoms
-
+@import "atoms/input";
+@import "atoms/button";
 // molecule
 
 // organisms
 @import "organisms/header";
+@import "organisms/banner";
+@import "organisms/footer";
 // pages

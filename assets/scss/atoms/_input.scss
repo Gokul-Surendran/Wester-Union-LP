@@ -1,0 +1,31 @@
+.wul-inpwrap{
+    position: relative;
+    margin: $spacer-4 0;
+
+    label {
+        color: var(--clr-black);
+        font-weight: 600;
+        padding-bottom: 8px;
+    }
+ 
+    input[type='input'],
+    .wul-inp{
+       display: inline-block;
+       width: 100%;
+       border: 1px solid var(--clr-black);
+       border-radius: 3px;
+       padding: $spacer-2 $spacer-4;
+       height: 44px;
+       
+       &:valid + .wul-label,
+       &:focus + .wul-label
+       {
+          top: -7px;
+          font-size: 12px;
+          background-color:var(--clr-white);
+       }
+    }
+
+ }
+ 
+ 

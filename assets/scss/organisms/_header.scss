@@ -4,7 +4,7 @@
     position: relative;
   
     .navbar {
-      padding: $spacer-6 $spacer-0;
+      padding: $spacer-4 $spacer-0;
     }
   
     &__logo {
@@ -207,7 +207,7 @@
       }
   
       &--yellow {
-        background-color: var(--clr-black);
+        background-color: var(--clr-yellow);
   
         .navbar-light .navbar-toggler-icon {
           background-image: url("../images/hamburg-yellow.svg");
@@ -256,6 +256,7 @@
   
       .container-fluid {
         .wul-header__logo {
+          max-width: 120px;
           order: 1;
         }
   
