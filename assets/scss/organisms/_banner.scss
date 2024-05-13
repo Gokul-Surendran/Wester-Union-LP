@@ -21,6 +21,73 @@
          width: 80%;
       }
     }
+
+    &__terms {
+      width: 80%;
+      &-head {
+          color: var(--clr-black);
+          font-size: 13px;
+          font-weight: 400;
+          padding-bottom: 4px;
+      }
+      ul {
+          li {
+              color: var(--clr-black);
+              font-size: 13px;
+              font-weight: 400;
+              padding-bottom: 4px;
+              position: relative;
+              padding-left: 16px;
+              &.bullet-none {
+                  &::after {
+                      display: none;
+                  }
+              }
+              &.left-none {
+               margin-left: 0;
+               padding: 8px 0;
+               &::after {
+                   display: none;
+               }
+           }
+              a {
+                  // color: var(--clr-black);
+                  color: blue;
+                  text-decoration: underline;
+                  &:hover {
+                     //  color: var(--clr-black); 
+                     color: blue;
+                  }
+              }
+              &::after {
+                  position: absolute;
+                  content: "";
+                  left: 0;
+                  top: 6px;
+                  width: 4px;
+                  height: 4px;
+                  background-color: var(--clr-black);
+                  border-radius: 50%;
+              }
+          }
+      }
+      &-txt {
+          font-size: 13px;
+          color: var(--clr-white);
+          font-weight: 400;
+          padding-bottom: 24px;
+          a {
+              color: var(--clr-white);
+              text-decoration: underline;
+              &:hover {
+                  color: var(--clr-white); 
+              }
+          }
+          &:last-child {
+              padding-bottom: 0;
+          }
+      }
+  }
  
     .wul-title {
        font-size: 40px;
@@ -36,14 +103,21 @@
        flex-direction: column;
        padding: $spacer-5 $spacer-0;
        z-index: 1;
-       height: 650px;
+       height: 880px;
        justify-content: center;
        padding: 32px 0;
        &.thankyou {
-         height: 500px;
+         height: 800px;
+         .wul-title {
+            span {
+               font-size: 20px;
+               display: block;
+             }
+         }
        }
        .wul-btn {
          width: 200px;
+         margin-bottom: 16px;
       }
     }
 
@@ -131,8 +205,13 @@
        &__form {
           max-width: 300px;
        }
+
+       &__bg {
+         background-position: left center;
+       }
        &__wrap {
-         height: 800px;
+         height: 960px;
+         width: 70%;
          &.thankyou {
             height: auto;
           }
