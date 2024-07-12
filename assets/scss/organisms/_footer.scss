@@ -39,58 +39,52 @@
         //     font-weight: 400;
         //     padding-bottom: 4px;
         // }
-        // ul {
-        //     li {
-        //         color: var(--clr-white);
-        //         font-size: 13px;
-        //         font-weight: 400;
-        //         padding-bottom: 4px;
-        //         position: relative;
-        //         padding-left: 16px;
-        //         &.bullet-none {
-        //             &::after {
-        //                 display: none;
-        //             }
-        //         }
-        //         a {
-        //             color: var(--clr-white);
-        //             text-decoration: underline;
-        //             &:hover {
-        //                 color: var(--clr-white); 
-        //             }
-        //         }
-        //         &::after {
-        //             position: absolute;
-        //             content: "";
-        //             left: 0;
-        //             top: 6px;
-        //             width: 4px;
-        //             height: 4px;
-        //             background-color: var(--clr-white);
-        //             border-radius: 50%;
-        //         }
-        //     }
-        // }
         ul {
+            li {
+                color: var(--clr-white);
+                font-size: 13px;
+                font-weight: 400;
+                padding-bottom: 4px;
+                position: relative;
+                padding-left: 16px;
+                list-style: none;
+                &.bullet-none {
+                    &::after {
+                        display: none;
+                    }
+                }
+                a {
+                    color: var(--clr-white);
+                    text-decoration: underline;
+                    &:hover {
+                        color: var(--clr-white); 
+                    }
+                }
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 6px;
+                    width: 4px;
+                    height: 4px;
+                    background-color: var(--clr-white);
+                    border-radius: 50%;
+                }
+            }
+        }
+        
+        ol.thailand-list {
             margin-left: 12px;
             li {
-                // position: relative;
-                // padding-left: 16px;
+                &::after {
+                    display: none;
+                }
+                list-style: decimal;
+                // padding-left: 8px;
                 font-size: 13px;
                 color: var(--clr-white);
                 font-weight: 400;
-                padding-bottom: 16px;
-                list-style: decimal;
-                // &::after {
-                //     position: absolute;
-                //     content: "";
-                //     left: 0;
-                //     top: 6px;
-                //     width: 5px;
-                //     height: 5px;
-                //     background-color: #fff;
-                //     border-radius: 50%;
-                // }
+                padding-bottom: 8px;
             }
         }
         // &-txt {
