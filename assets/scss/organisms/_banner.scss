@@ -15,11 +15,19 @@
        background-color: var(--clr-yellow);
     }
 
+    &__error {
+      padding-bottom: 24px;
+      color: #EE1500;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
     .wul-inpwrap {
       margin: 24px 0 16px 0;
       input {
          width: 80%;
       }
+      
     }
 
     &__terms {
@@ -101,11 +109,17 @@
        width: 50%;
        display: flex;
        flex-direction: column;
-       padding: $spacer-5 $spacer-0;
        z-index: 1;
        height: auto;
        justify-content: center;
        padding: 32px 0;
+
+       &.th-error {
+         .wul-title {
+            margin-bottom: 0;
+         }
+       }
+
        &.thankyou {
          height: 800px;
          .wul-title {
