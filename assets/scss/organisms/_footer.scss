@@ -42,34 +42,34 @@
         ul {
             li {
                 color: var(--clr-white);
-                font-size: 13px;
+                font-size: 16px;
                 font-weight: 400;
                 padding-bottom: 4px;
                 position: relative;
-                padding-left: 16px;
+                // padding-left: 16px;
                 list-style: none;
-                &.bullet-none {
-                    &::after {
-                        display: none;
-                    }
-                }
+                // &.bullet-none {
+                //     &::after {
+                //         display: none;
+                //     }
+                // }
                 a {
-                    color: var(--clr-white);
+                    color: blue;
                     text-decoration: underline;
                     &:hover {
                         color: var(--clr-white); 
                     }
                 }
-                &::after {
-                    position: absolute;
-                    content: "";
-                    left: 0;
-                    top: 6px;
-                    width: 4px;
-                    height: 4px;
-                    background-color: var(--clr-white);
-                    border-radius: 50%;
-                }
+                // &::after {
+                //     position: absolute;
+                //     content: "";
+                //     left: 0;
+                //     top: 6px;
+                //     width: 4px;
+                //     height: 4px;
+                //     background-color: var(--clr-white);
+                //     border-radius: 50%;
+                // }
             }
         }
         
@@ -107,7 +107,7 @@
         
 
         p {
-            font-size: 13px;
+            font-size: 16px;
             color: var(--clr-white);
             font-weight: 400;
             padding-bottom: 24px;
@@ -171,8 +171,22 @@
             transition: 0.3s;
         }
     }
+    &__alink {
+        text-decoration: underline;
+        color: blue;
+    }
+    &__copyright {
+        font-size: 16px;
+        margin-top: 40px;
+    }
 }
-
+@include tablet {
+    .wul-footer {
+        &__terms {
+            padding-left: 80px;
+        }
+    }
+}
 @include mobile {
     .wul-footer {
         &__out {
@@ -191,6 +205,14 @@
         }
         &__terms {
             width: 100%;
+            ul {
+                li {
+                    font-size: 13px;
+                }
+            }
+            p{
+                font-size: 13px;
+            }
         }
     }
 }
