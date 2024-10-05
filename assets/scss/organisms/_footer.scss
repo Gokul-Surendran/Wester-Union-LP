@@ -6,6 +6,7 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 32px;
+
         &--sec {
             border-top: 1px solid #f1f1f1;
             padding-bottom: 0;
@@ -25,13 +26,15 @@
         width: 20%;
         height: auto;
         margin-right: 32px;
+
         img {
-           width: 200px;
-           height: auto; 
+            width: 200px;
+            height: auto;
         }
     }
 
     &__terms {
+
         // width: 70%;
         // &-head {
         //     color: var(--clr-white);
@@ -42,12 +45,13 @@
         ul {
             li {
                 color: var(--clr-white);
-                font-size: 16px;
+                font-size: 15px;
                 font-weight: 400;
                 padding-bottom: 4px;
                 position: relative;
                 // padding-left: 16px;
                 list-style: none;
+
                 // &.bullet-none {
                 //     &::after {
                 //         display: none;
@@ -56,10 +60,12 @@
                 a {
                     color: blue;
                     text-decoration: underline;
+
                     &:hover {
-                        color: var(--clr-white); 
+                        color: var(--clr-white);
                     }
                 }
+
                 // &::after {
                 //     position: absolute;
                 //     content: "";
@@ -72,13 +78,15 @@
                 // }
             }
         }
-        
+
         ol.thailand-list {
             margin-left: 12px;
+
             li {
                 &::after {
                     display: none;
                 }
+
                 list-style: decimal;
                 // padding-left: 8px;
                 font-size: 13px;
@@ -87,6 +95,7 @@
                 padding-bottom: 8px;
             }
         }
+
         // &-txt {
         //     font-size: 13px;
         //     color: var(--clr-white);
@@ -104,19 +113,20 @@
         //     }
         // }
 
-        
+
 
         p {
             font-size: 16px;
             color: var(--clr-white);
             font-weight: 400;
             padding-bottom: 24px;
+
             a {
-            font-size: 13px;
-            // color: var(--clr-white);
-            color: blue;
-            font-weight: 400;
-            text-decoration: underline;
+                font-size: 13px;
+                // color: var(--clr-white);
+                color: blue;
+                font-weight: 400;
+                text-decoration: underline;
             }
         }
     }
@@ -132,14 +142,17 @@
         ul {
             display: flex;
             flex-wrap: wrap;
+
             li {
                 color: var(--clr-yellow);
                 font-size: 14px;
                 font-weight: 400;
                 padding-right: 16px;
                 padding-bottom: 4px;
+
                 a {
                     color: var(--clr-yellow);
+
                     &:hover {
                         color: var(--clr-yellow);
                         text-decoration: underline;
@@ -171,15 +184,18 @@
             transition: 0.3s;
         }
     }
+
     &__alink {
         text-decoration: underline;
         color: blue;
     }
+
     &__copyright {
         font-size: 16px;
         margin-top: 40px;
     }
 }
+
 @include tablet {
     .wul-footer {
         &__terms {
@@ -187,6 +203,7 @@
         }
     }
 }
+
 @include mobile {
     .wul-footer {
         &__out {
@@ -196,21 +213,26 @@
         &__left {
             width: 100%;
         }
+
         &__right {
             width: 100%;
         }
+
         &__logo {
             width: 100%;
             padding-bottom: 24px;
         }
+
         &__terms {
             width: 100%;
+
             ul {
                 li {
                     font-size: 13px;
                 }
             }
-            p{
+
+            p {
                 font-size: 13px;
             }
         }

@@ -31,7 +31,7 @@
         }
 
         h6 {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 500;
             margin-bottom: 20px;
             font-family: "PP Right Grotesk Wide";
@@ -45,6 +45,10 @@
             a {
                 text-decoration: underline;
                 color: #000;
+            }
+
+            sup {
+                font-size: 10px;
             }
         }
     }
@@ -88,11 +92,49 @@
         display: flex;
         gap: 10px;
         margin-bottom: 20px;
+        position: relative;
+        align-items: baseline;
 
         h6 {
             margin-bottom: 0;
         }
 
+        #lblcheckbox {
+            font-size: 14px;
+            position: absolute;
+            left: 23px;
+            top: 20px;
+        }
+
+    }
+
+    &__t-c {
+        padding-top: 10px;
+        padding-bottom: 40px;
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        ol {
+            list-style: decimal;
+            margin-left: 24px;
+
+            li {
+                font-size: 15px;
+                margin-bottom: 8px;
+
+                a {
+                    color: #0a0005;
+                }
+            }
+
+            sup {
+                font-size: 10px;
+            }
+        }
     }
 }
 
