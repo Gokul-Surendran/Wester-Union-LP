@@ -2,7 +2,7 @@
     background-color: var(--clr-yellow);
 
     .wul-title {
-        font-size: 36px;
+        font-size: 40px;
         margin-bottom: 24px;
         font-family: "PP Right Grotesk Wide";
 
@@ -13,7 +13,7 @@
 
     &__bg {
         width: 100%;
-        height: 600px;
+        height: auto;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -25,21 +25,19 @@
         padding: 40px 0px;
 
         label {
-            font-weight: 500;
-            font-family: "PP Right Grotesk Wide";
+            font-weight: 600;
             margin-bottom: 5px;
         }
 
         h6 {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 500;
             margin-bottom: 20px;
-            font-family: "PP Right Grotesk Wide";
         }
 
         p {
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 13px;
+            line-height: 19px;
             margin-bottom: 20px;
 
             a {
@@ -70,12 +68,9 @@
         color: #000;
         background-color: #fff;
         border: 1px solid #000;
-        border-radius: 5px;
-        padding: 8px 10px;
-
-        &::placeholder {
-            color: #000;
-        }
+        border-radius: 3px;
+        padding: 8px 24px;
+        height: 44px;
     }
 
     &__captcha {
@@ -91,21 +86,23 @@
     &__checkbx {
         display: flex;
         gap: 10px;
-        margin-bottom: 20px;
-        position: relative;
+        margin-bottom: 0px;
         align-items: baseline;
 
         h6 {
             margin-bottom: 0;
         }
 
-        #lblcheckbox {
-            font-size: 14px;
-            position: absolute;
-            left: 23px;
-            top: 20px;
-        }
+    }
 
+    #lblcheckbox {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .wul-btn--black {
+        width: 200px;
+        margin-top: 15px;
     }
 
     &__t-c {
@@ -128,6 +125,10 @@
 
                 a {
                     color: #0a0005;
+                }
+
+                span {
+                    text-decoration: underline;
                 }
             }
 
