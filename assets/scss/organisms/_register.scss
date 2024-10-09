@@ -43,6 +43,10 @@
             a {
                 text-decoration: underline;
                 color: #000;
+
+                &:hover {
+                    text-decoration: none;
+                }
             }
 
             sup {
@@ -81,6 +85,11 @@
             width: 100%;
             height: auto;
         }
+
+        .rc-anchor-error-msg {
+            font-size: 11px !important;
+            padding: 5px !important;
+        }
     }
 
     &__checkbx {
@@ -91,6 +100,15 @@
 
         h6 {
             margin-bottom: 0;
+
+            a {
+                color: #0a0005;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
 
     }
