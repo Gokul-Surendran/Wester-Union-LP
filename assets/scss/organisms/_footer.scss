@@ -194,6 +194,12 @@
         font-size: 16px;
         margin-top: 40px;
     }
+    .first-li {
+        padding-bottom: 0;
+    }
+    .second-li {
+        padding: 26px 0 56px 0;
+    }
 }
 
 @include tablet {
