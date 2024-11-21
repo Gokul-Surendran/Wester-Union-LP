@@ -1,0 +1,52 @@
+.wul-yello {
+    min-height: 100vh;
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    &__headlogo {
+        width: 100%;
+        padding-top: 72px;
+        display: flex;
+        justify-content: flex-start;
+        img {
+            width: 20%;
+        }
+    }
+    &__festlogo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 10px;
+        img {
+            width: 52%;
+        }
+    }
+    &__text1 {
+        color: #000;
+        padding-top: 36px;
+        font-size: 44px;
+        font-weight: 500;
+        text-align: center;
+        font-family: "PP Right Grotesk Wide";
+    }
+    &__text2 {
+        color: #000;
+        padding-top: 32px;
+        font-size: 54px;
+        font-weight: 500;
+        text-align: center;
+        font-family: "PP Right Grotesk Wide";
+    }
+
+    &__rewardlogo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 10px;
+        img {
+            width: 52%;
+        }
+    }
+}
