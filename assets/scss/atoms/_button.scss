@@ -40,3 +40,20 @@
        }
     }
  }
+
+ .cx-btn-out {
+   display: flex;
+   justify-content: center;
+   a {
+      width: 150px;
+   }
+ }
+ .cx-popup-h {
+   text-align: center;
+   font-size: 22px;
+   font-weight: 700;
+   padding-bottom: 20px;
+ }
+ .wul-modal {
+   width: 80%;
+ }
