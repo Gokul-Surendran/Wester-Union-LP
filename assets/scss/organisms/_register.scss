@@ -9,8 +9,15 @@
         a {
             color: #0a0005;
         }
-    }
 
+        &.pb {
+            margin-bottom: 0px;
+        }
+        &.bold {
+            font-weight: bold;
+        }
+    }
+    
     .wul-title2 {
         font-size: 40px;
         padding-top: 6px;
@@ -20,13 +27,51 @@
             color: #0a0005;
         }
     }
-
+    .wul-title3 {
+        font-size: 26px;
+        margin-top: -50px;
+        font-family: "PP Right Grotesk Wide";
+    }
+    &__pcout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    &__planeout {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__planeimg {
+        width: 50%;
+        margin-left: -64px;
+        img {
+            width: 100%;
+        }
+    }
+    &__coinimg {
+        width: 48%;
+        margin-left: 20px;
+        img {
+            width: 100%;
+            margin-top: 17px;
+        }
+    }
+    &__coinout {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // margin-top: -28px;
+        margin-left: -22%;
+    }
     &__tc {
         font-size: 16px;
         color: #000;
         padding-top: 18px;
         font-family: "PP Right Grotesk Wide";
         font-weight: 500;
+        width: 27%;
     }
 
     &__bg {
@@ -100,7 +145,7 @@
         width: 48%;
 
         &.yelloinp-wrap {
-            width: 44%
+            width: 42%
         }
     }
 
@@ -117,7 +162,7 @@
         }
         &.select {
             appearance: none;  
-            background-image: url(../../../assets/images/arrow-down-blk.png);
+            background-image: url(../../assets/images/arrow-down-blk.png);
             background-repeat: no-repeat;
             background-position: right 24px center;
         }
@@ -219,8 +264,25 @@
         &__inp-wrap {
             
             &.yelloinp-wrap {
-                width: 32%;
+                width: 28%;
             }
+        }
+        .wul-title2 {
+            padding-bottom: 10px;
+            padding-top: 0;
+        }
+        &__coinout {
+            margin-top: 2px;
+            margin-left: 0;
+        }
+        .wul-title3 {
+            margin-top: 4px;
+        }
+        &__planeout {
+            margin-top: 4px;
+        }
+        &__tc {
+            width: 20%;
         }
     }
 }
@@ -234,8 +296,32 @@
         &__bg {
             background-image: none;
             background: #FFDD00;
+            display: contents;
         }
-    }
+        &__planeimg {
+            width: 90%;
+            margin-left: 0;
+        }
+        &__planeout {
+            margin-top: 24px;
+            margin-bottom: 22px;
+        }
+        &__coinout {
+            margin-top: 0;
+            margin-left: 0;
+        }
+        &__coinimg {
+            width: 90%;
+            margin-left: 20px;
+        }
+        .wul-title3 {
+            font-size: 23px;
+            margin-top: 0;
+        }
+        &__tc {
+            width: 60%;
+        }
+}
 }
 
 @include mobile {
@@ -269,13 +355,42 @@
         .wul-title {
             font-size: 21px;
             margin-bottom: 0;
+            &.pb {
+                margin-bottom: 10px;
+            }
         }
         .wul-title2 {
-            font-size: 24px;
+            font-size: 23px;
             margin-bottom: 0;
         }
         &__checkbx {
             align-items: flex-start;
+        }
+        &__planeimg {
+            width: 70%;
+        }
+        .wul-title3 {
+            font-size: 18px;
+            margin-top: 8px;
+            // width: 90%;
+        }
+        &__coinout {
+            margin-top: -16px;  
+            justify-content: space-between;  
+            margin-left: 0;       
+        }
+        &__coinimg {
+            width: 32%;
+            margin-right: 14px;
+        }
+        &__pcout {
+            width: 100%;
+            margin-bottom: 12px;
+            gap: 20px;
+            flex-direction: column;
+        }
+        &__tc {
+            width: 100%;
         }
     }
 }
