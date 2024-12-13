@@ -134,7 +134,7 @@
       z-index: 1;
       height: auto;
       justify-content: center;
-      padding: 32px 0;
+      padding: 32px 0 0;
 
       &.th-error {
          .wul-title {
@@ -237,6 +237,26 @@
    .wul-footer {
       margin-top: -$spacer-3;
    }
+   .hyperlink {
+      text-decoration: underline !important;
+      color: #000;
+      text-underline-offset: 7px;
+      &:hover {
+         text-decoration: none !important;
+      }
+    }
+    .thanksmob {
+      display: none;
+      width: 400px;
+      img {
+         width: 100%;
+         position: relative;
+         top: 6px;
+         bottom: 0;
+         width: 100%;
+         height: 100%;
+      }
+    }
 }
 
 @include tablet-pro {
@@ -334,5 +354,9 @@
       //    width: 100%;
       //    margin-top: $spacer-4;
       // }
+
+      .thanksmob {
+         display: block;
+       }
    }
 }

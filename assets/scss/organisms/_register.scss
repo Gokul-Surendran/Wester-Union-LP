@@ -1,396 +1,427 @@
 .wul-register {
-    background-color: var(--clr-yellow);
+  background-color: var(--clr-yellow);
 
-    .wul-title {
-        font-size: 40px;
-        margin-bottom: 24px;
-        font-family: "PP Right Grotesk Wide";
-
-        a {
-            color: #0a0005;
-        }
-
-        &.pb {
-            margin-bottom: 0px;
-        }
-        &.bold {
-            font-weight: bold;
-        }
-    }
-    
-    .wul-title2 {
-        font-size: 40px;
-        padding-top: 6px;
-        font-family: "PP Right Grotesk Wide";
-
-        a {
-            color: #0a0005;
-        }
-    }
-    .wul-title3 {
-        font-size: 26px;
-        margin-top: -50px;
-        font-family: "PP Right Grotesk Wide";
-    }
-    &__pcout {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
-    }
-    &__planeout {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    &__planeimg {
-        width: 50%;
-        margin-left: -64px;
-        img {
-            width: 100%;
-        }
-    }
-    &__coinimg {
-        width: 48%;
-        margin-left: 20px;
-        img {
-            width: 100%;
-            margin-top: 17px;
-        }
-    }
-    &__coinout {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        // margin-top: -28px;
-        margin-left: -22%;
-    }
-    &__tc {
-        font-size: 16px;
-        color: #000;
-        padding-top: 18px;
-        font-family: "PP Right Grotesk Wide";
-        font-weight: 500;
-        width: 27%;
-    }
-
-    &__bg {
+  &__mobile {
+    display: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    img {
         width: 100%;
-        height: auto;
-        background-size: cover;
-        background-position: right;
-        background-repeat: no-repeat;
+    }
+  }
+  .wul-title {
+    font-size: 40px;
+    margin-bottom: 24px;
+    font-family: "PP Right Grotesk Wide";
+
+    a {
+      color: #0a0005;
     }
 
-    &__yellopara {       
+    &.pb {
+      margin-bottom: 0px;
+    }
+    &.bold {
+      font-weight: bold;
+    }
+  }
+
+  .wul-title2 {
+    font-size: 40px;
+    padding-top: 6px;
+    font-family: "PP Right Grotesk Wide";
+
+    a {
+      color: #0a0005;
+    }
+  }
+  .wul-title3 {
+    font-size: 26px;
+    margin-top: -50px;
+    font-family: "PP Right Grotesk Wide";
+  }
+  &__pcout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+  &__planeout {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__planeimg {
+    width: 50%;
+    margin-left: -64px;
+    img {
+      width: 100%;
+    }
+  }
+  &__coinimg {
+    width: 45%;
+    margin-left: 20px;
+    img {
+      width: 100%;
+      margin-top: 17px;
+    }
+  }
+  &__coinout {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // margin-top: -28px;
+    margin-left: -22%;
+  }
+  &__tc {
+    font-size: 16px;
+    color: #000;
+    padding-top: 18px;
+    font-family: "PP Right Grotesk Wide";
+    font-weight: 500;
+    width: 27%;
+  }
+
+  &__bg {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  &__yellopara {
+    color: #000;
+    font-family: "PP Right Grotesk Wide";
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px 0px;
+
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    h6 {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 19px;
+      margin-bottom: 20px;
+
+      a {
+        text-decoration: underline;
         color: #000;
-        font-family: "PP Right Grotesk Wide";
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      sup {
+        font-size: 10px;
+      }
+    }
+    &.yelloform {
+      max-width: none;
+      padding: 28px 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+    &.yelloinner {
+      display: inline;
+    }
+  }
+
+  &__inp-wrap {
+    margin-bottom: 15px;
+    width: 48%;
+
+    &.yelloinp-wrap {
+      width: 42%;
+    }
+  }
+
+  &__inp {
+    width: 100%;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 8px 24px;
+    height: 44px;
+    &::placeholder {
+      color: #0a0005;
+    }
+    &.select {
+      appearance: none;
+      background-image: url(../../assets/images/arrow-down-blk.png);
+      background-repeat: no-repeat;
+      background-position: right 24px center;
+    }
+  }
+
+  &__captcha {
+    width: 180px;
+    padding: 10px 0px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .rc-anchor-error-msg {
+      font-size: 11px !important;
+      padding: 5px !important;
+    }
+  }
+
+  &__checkbx {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0px;
+    align-items: baseline;
+
+    h6 {
+      margin-bottom: 0;
+
+      a {
+        color: #0a0005;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  #lblcheckbox {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .wul-btn--black {
+    width: 200px;
+    margin-top: 15px;
+
+    &.yellobtn {
+      width: 170px;
+    }
+  }
+
+  &__t-c {
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    ol {
+      list-style: decimal;
+      margin-left: 24px;
+
+      li {
         font-size: 15px;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
+
+        a {
+          color: #0a0005;
+        }
+
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      sup {
+        font-size: 10px;
+      }
     }
-
-    &__form {
-        width: 100%;
-        max-width: 700px;
-        padding: 40px 0px;
-
-        label {
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        h6 {
-            font-size: 16px;
-            font-weight: 500;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 13px;
-            line-height: 19px;
-            margin-bottom: 20px;
-
-            a {
-                text-decoration: underline;
-                color: #000;
-
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-
-            sup {
-                font-size: 10px;
-            }
-        }
-        &.yelloform {
-            max-width: none;
-            padding: 28px 0 ;
-        }
-    }
-
-    &__inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
-
-        &.yelloinner {
-            display: inline;
-        }
-    }
-
-    &__inp-wrap {
-        margin-bottom: 15px;
-        width: 48%;
-
-        &.yelloinp-wrap {
-            width: 42%
-        }
-    }
-
-    &__inp {
-        width: 100%;
-        color: #000;
-        background-color: #fff;
-        border: 1px solid #000;
-        border-radius: 3px;
-        padding: 8px 24px;
-        height: 44px;
-        &::placeholder {
-            color: #0A0005;
-        }
-        &.select {
-            appearance: none;  
-            background-image: url(../../assets/images/arrow-down-blk.png);
-            background-repeat: no-repeat;
-            background-position: right 24px center;
-        }
-    }
-
-    &__captcha {
-        width: 180px;
-        padding: 10px 0px;
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        .rc-anchor-error-msg {
-            font-size: 11px !important;
-            padding: 5px !important;
-        }
-    }
-
-    &__checkbx {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 0px;
-        align-items: baseline;
-
-        h6 {
-            margin-bottom: 0;
-
-            a {
-                color: #0a0005;
-                text-decoration: underline;
-
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-        }
-
-    }
-
-    #lblcheckbox {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    .wul-btn--black {
-        width: 200px;
-        margin-top: 15px;
-
-        &.yellobtn {
-            width: 170px;          
-        }
-    }
-
-    &__t-c {
-        padding-top: 10px;
-        padding-bottom: 40px;
-
-        p {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-
-        ol {
-            list-style: decimal;
-            margin-left: 24px;
-
-            li {
-                font-size: 15px;
-                margin-bottom: 8px;
-
-                a {
-                    color: #0a0005;
-                }
-
-                span {
-                    text-decoration: underline;
-                }
-            }
-
-            sup {
-                font-size: 10px;
-            }
-        }
-    }
+  }
+  .checkbox-group {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .checkbox-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  //   .checkbox-group input[type="checkbox"] {
+  //     margin-right: 5px;
+  //   }
 }
 
 @include tablet-pro {
-    .wul-register {
-        br {
-            display: none
-        }
-
-        &__form {
-            max-width: 530px;
-        }
-        &__inp-wrap {
-            
-            &.yelloinp-wrap {
-                width: 28%;
-            }
-        }
-        .wul-title2 {
-            padding-bottom: 10px;
-            padding-top: 0;
-        }
-        &__coinout {
-            margin-top: 2px;
-            margin-left: 0;
-        }
-        .wul-title3 {
-            margin-top: 4px;
-        }
-        &__planeout {
-            margin-top: 4px;
-        }
-        &__tc {
-            width: 20%;
-        }
+  .wul-register {
+    br {
+      display: none;
     }
+
+    &__form {
+      max-width: 530px;
+    }
+    &__inp-wrap {
+      &.yelloinp-wrap {
+        width: 32%;
+      }
+    }
+    .wul-title2 {
+      padding-bottom: 10px;
+      padding-top: 0;
+    }
+    &__coinout {
+      margin-top: 2px;
+      margin-left: 0;
+    }
+    .wul-title3 {
+      margin-top: 4px;
+    }
+    &__planeout {
+      margin-top: 4px;
+    }
+    &__tc {
+      width: 20%;
+    }
+    .checkbox-group {
+        gap: 6px;
+    }
+  }
+
 }
 
 @include tablet {
-    .wul-register {
-        br {
-            display: none;
-        }
+  .wul-register {
+    br {
+      display: none;
+    }
 
-        &__bg {
-            background-image: none;
-            background: #FFDD00;
-            display: contents;
-        }
-        &__planeimg {
-            width: 90%;
-            margin-left: 0;
-        }
-        &__planeout {
-            margin-top: 24px;
-            margin-bottom: 22px;
-        }
-        &__coinout {
-            margin-top: 0;
-            margin-left: 0;
-        }
-        &__coinimg {
-            width: 90%;
-            margin-left: 20px;
-        }
-        .wul-title3 {
-            font-size: 23px;
-            margin-top: 0;
-        }
-        &__tc {
-            width: 60%;
-        }
-}
+    &__bg {
+      background-image: none;
+      background: #ffdd00;
+      display: contents;
+    }
+    &__planeimg {
+      width: 90%;
+      margin-left: 0;
+    }
+    &__planeout {
+      margin-top: 24px;
+      margin-bottom: 22px;
+    }
+    &__coinout {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    &__coinimg {
+      width: 90%;
+      margin-left: 20px;
+    }
+    .wul-title3 {
+      font-size: 23px;
+      margin-top: 0;
+    }
+    &__tc {
+      width: 60%;
+    }
+  }
 }
 
 @include mobile {
-    .wul-register {
-        br {
-            display: none;
-        }
-
-        &__form {
-            padding-top: 30px;
-        }
-
-        &__bg {
-            height: auto;
-            background-position: left;
-        }
-
-        &__inp-wrap {
-            width: 100%;
-            &.yelloinp-wrap {
-                width: 100%;
-
-            }
-        }
-
-        &__inner {
-            margin-bottom: 8px;
-            gap: 5px;
-        }
-
-        .wul-title {
-            font-size: 21px;
-            margin-bottom: 0;
-            &.pb {
-                margin-bottom: 10px;
-            }
-        }
-        .wul-title2 {
-            font-size: 23px;
-            margin-bottom: 0;
-        }
-        &__checkbx {
-            align-items: flex-start;
-        }
-        &__planeimg {
-            width: 70%;
-        }
-        .wul-title3 {
-            font-size: 18px;
-            margin-top: 8px;
-            // width: 90%;
-        }
-        &__coinout {
-            margin-top: -16px;  
-            justify-content: space-between;  
-            margin-left: 0;       
-        }
-        &__coinimg {
-            width: 32%;
-            margin-right: 14px;
-        }
-        &__pcout {
-            width: 100%;
-            margin-bottom: 12px;
-            gap: 20px;
-            flex-direction: column;
-        }
-        &__tc {
-            width: 100%;
-        }
+  .wul-register {
+    &__mobile {
+      display: block;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
+    br {
+      display: none;
+    }
+
+    &__form {
+      padding-top: 30px;
+    }
+
+    &__bg {
+      height: auto;
+      background-position: left;
+    }
+
+    &__inp-wrap {
+      width: 100%;
+      &.yelloinp-wrap {
+        width: 100%;
+      }
+    }
+
+    &__inner {
+      margin-bottom: 8px;
+      gap: 5px;
+    }
+
+    .wul-title {
+      font-size: 21px;
+      margin-bottom: 0;
+      display: none;
+      &.pb {
+        margin-bottom: 10px;
+      }
+    }
+    .wul-title2 {
+      font-size: 23px;
+      margin-bottom: 0;
+    }
+    &__checkbx {
+      align-items: flex-start;
+    }
+    &__planeimg {
+      width: 70%;
+    }
+    .wul-title3 {
+      font-size: 18px;
+      margin-top: 8px;
+      // width: 90%;
+    }
+    &__coinout {
+      margin-top: -16px;
+      justify-content: space-between;
+      margin-left: 0;
+    }
+    &__coinimg {
+      width: 32%;
+      margin-right: 25px;
+    }
+    &__pcout {
+      width: 100%;
+      margin-bottom: 12px;
+      gap: 20px;
+      flex-direction: column;
+    }
+    &__tc {
+      width: 100%;
+    }
+  }
 }
