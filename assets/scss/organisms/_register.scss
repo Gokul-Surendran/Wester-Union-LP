@@ -346,6 +346,11 @@
     &__tc {
       width: 60%;
     }
+    &__inp-wrap {
+      &.yelloinp-wrap {
+        width: 100%;
+      }
+    }
   }
 }
 
