@@ -257,6 +257,9 @@
          height: 100%;
       }
     }
+    .wul-signinup__wrap .wul-btn {
+      width: 260px;
+    }
 }
 
 @include tablet-pro {
@@ -311,7 +314,7 @@
       }
 
       .wul-title {
-         font-size: 30px;
+         font-size: 52px;
          margin-bottom: $spacer-4;
          color: var(--clr-black);
 

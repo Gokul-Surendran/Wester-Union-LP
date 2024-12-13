@@ -78,6 +78,7 @@
     font-size: 16px;
     color: #000;
     padding-top: 18px;
+    padding-bottom: 12px;
     font-family: "PP Right Grotesk Wide";
     font-weight: 500;
     width: 27%;
@@ -307,6 +308,10 @@
     }
     .checkbox-group {
         gap: 6px;
+        label {
+          font-size: 12px;
+          margin-bottom: 0;
+        }
     }
   }
 
@@ -349,6 +354,14 @@
     &__inp-wrap {
       &.yelloinp-wrap {
         width: 100%;
+      }
+    }
+    .checkbox-group {
+      gap: 8px;
+
+      label {
+        font-size: 12px;
+        margin-bottom: 0;
       }
     }
   }
@@ -427,6 +440,14 @@
     }
     &__tc {
       width: 100%;
+    }
+    .checkbox-group {
+      gap: 8px;
+
+      label {
+        font-size: 13px;
+        margin-bottom: 0;
+      }
     }
   }
 }
