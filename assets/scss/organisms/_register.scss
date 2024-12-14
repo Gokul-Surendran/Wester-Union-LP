@@ -75,13 +75,13 @@
     margin-left: -22%;
   }
   &__tc {
-    font-size: 14px;
+    font-size: 13px;
     color: #000;
     padding-top: 18px;
     padding-bottom: 12px;
     font-family: "PP Right Grotesk Wide";
     font-weight: 500;
-    width: 22%;
+    width: 20%;
   }
 
   &__bg {
@@ -273,6 +273,10 @@
   //   .checkbox-group input[type="checkbox"] {
   //     margin-right: 5px;
   //   }
+
+  .modal-header {
+    border-bottom: none !important;
+  }
 }
 
 @include tablet-pro {
